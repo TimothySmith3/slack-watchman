@@ -1,0 +1,23 @@
+filename: cyber.yaml
+enabled: true
+meta:
+  name: Cyber
+  author: PaperMtn
+  date: '2020-08-14'
+  description: Detects mentions of cyber plaintext
+  severity: '70'
+category: pii
+scope:
+- messages
+file_types:
+test_cases:
+  match_cases:
+  - 'cyber'
+  - Cyber is mentioned
+  fail_cases:
+  - Cyber not mentioned
+strings:
+- Cyber
+- cyber
+
+pattern: 
